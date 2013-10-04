@@ -27,7 +27,7 @@ read  {return(LIRE);}
 
 "=" {return(OPAFF);}
 
-%[A-Z _]*%     {return(PROG);}
+%[A-Z _0-9]*%     {return(PROG);}
 "{"         {return(DEBUT);}
 "}"         {return(FIN);}
 if          {return(SI);}
