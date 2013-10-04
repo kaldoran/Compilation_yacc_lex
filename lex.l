@@ -27,7 +27,7 @@ read  {return(LIRE);}
 
 "=" {return(OPAFF);}
 
-program     {return(PROG);}
+%[A-Z _]*%     {return(PROG);}
 "{"         {return(DEBUT);}
 "}"         {return(FIN);}
 if          {return(SI);}
@@ -82,5 +82,10 @@ and {return(ET);}
 or  {return(OU);}
 
 [a-zA-Z_][a-zA-Z0-9_]* {return(IDF);}
+
+\/\*(([^\"])|(\**\"[^\"]*\"))*\*+\/ ;
+\#.* ;
+--.*-- ;
+\/\/.* ;
 
 " "|\n|\t ;
