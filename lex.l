@@ -5,13 +5,17 @@
 %%
 
 \"(\\.|[^\"])*\"           {return(CSTE_CHAINE);}
-#.*\n ;
 '([^']|\\t|\\n|\\r|\\')'   {return(CSTE_CARACTERE);}
 -?(0|[1-9][0-9]*)          {return(CSTE_ENTIERE);}
 -?(0|[1-9][0-9]*)?\.[0-9]* {return(CSTE_REELLE);}
 true|false                 {return(CSTE_BOOLEENNE);}
 
-"."/[a-zA-Z_][a-zA-Z0-9_]* {return(POINT);}
+\/\*(([^\"])|(\**\"[^\"]*\"))*\*+\/ ;
+\#.* ;
+--.*-- ;
+\/\/.* ;
+
+\.[a-zA-Z_][a-zA-Z0-9_]* {return(POINT);}
 
 ".."  {return(POINT_ET_POINT);}
 "["   {return(CROCHET_OUVRANT);}
@@ -82,10 +86,5 @@ and {return(ET);}
 or  {return(OU);}
 
 [a-zA-Z_][a-zA-Z0-9_]* {return(IDF);}
-
-\/\*(([^\"])|(\**\"[^\"]*\"))*\*+\/ ;
-\#.* ;
---.*-- ;
-\/\/.* ;
 
 " "|\n|\t ;
