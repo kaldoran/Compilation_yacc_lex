@@ -10,7 +10,7 @@ proc proc_1 ()
       x = 3;
     }
     else if (y == 4) then {
-      write("Héhé");
+      write("Héhé ! HAHA!");
     }
     else{
       write("Pas de bol");
