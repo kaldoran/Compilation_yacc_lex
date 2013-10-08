@@ -33,8 +33,8 @@ read  {return(LIRE);}
 
 %[A-Z _0-9]*% {return(PROG);}
 
-"{"         {return(DEBUT);}
-"}"         {return(FIN);}
+"{"         {return(ACC_DEBUT);}
+"}"         {return(ACC_FIN);}
 if          {return(SI);}
 then        {return(ALORS);}
 else        {return(SINON);}
@@ -53,6 +53,7 @@ var         {return(VARIABLE);}
 switch      {return(SWITCH);}
 case        {return(CASE);}
 default     {return(DEFAULT);}
+start       {return(START);}
 
 int    {return(ENTIER);}
 float  {return(REEL);}

@@ -30,7 +30,7 @@
 %token IDF
 
 /* Mots clefs */
-%token PROG DEBUT FIN
+%token PROG ACC_DEBUT ACC_FIN
 %token SI ALORS SINON 
 %token TANT_QUE POUR FAIRE
 %token RETOURNE
@@ -65,6 +65,8 @@
 %token ET 
 %token OU
 
+%token START
+
 %%
 
 /* -----------------------------------------------------*/
@@ -74,8 +76,8 @@
 programme: PROG corps
          ;
           
-corps: liste_declarations liste_instructions
-     | liste_instructions
+corps: liste_declarations START liste_instructions
+     | START liste_instructions
      ;
 
 /* -----------------------------------------------------*/
@@ -176,7 +178,7 @@ type_simple: ENTIER
 /* Instructions                                         */
 /* -----------------------------------------------------*/
 
-liste_instructions: DEBUT suite_liste_inst FIN
+liste_instructions: ACC_DEBUT suite_liste_inst ACC_FIN
                   ;
           
 suite_liste_inst: instruction
@@ -260,7 +262,7 @@ ternaire: expression INTERROGATION expression DEUX_POINTS expression
 /* Switch                                               */
 /* -----------------------------------------------------*/
 
-switch: SWITCH expression DEBUT suite_switch default FIN
+switch: SWITCH expression ACC_DEBUT suite_switch default ACC_FIN
       ;
 
 suite_switch: suite_switch CASE expression DEUX_POINTS liste_instructions

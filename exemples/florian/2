@@ -1,27 +1,31 @@
-program
+% PROGRAM %
 
+# Proc 1
 proc proc_1 () 
-    var coucou : char;
+  var coucou : char;
 
-{
+  start
+  {
     if ( x == 6) then {
-        x = 3;
+      x = 3;
     }
     else if (y == 4) then {
-        write("Héhé");
+      write("Héhé");
     }
     else{
-        write("Pas de bol");
+      write("Pas de bol");
     }
-};
+  };
 
+# Func 1
 function func_1 () return int 
-    var coucou : char;
-    
-    {
-        return 1;
-    };
+  var coucou : char;
+  start    
+  {
+    return 1;
+  };
 
-{;}
-# pas de begin et end
+# Corps du Programme
+start
+{ ; }
 
