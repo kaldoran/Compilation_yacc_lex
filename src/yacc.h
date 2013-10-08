@@ -66,8 +66,8 @@ extern int yydebug;
     OPAFF = 276,
     IDF = 277,
     PROG = 278,
-    DEBUT = 279,
-    FIN = 280,
+    ACC_DEBUT = 279,
+    ACC_FIN = 280,
     SI = 281,
     ALORS = 282,
     SINON = 283,
@@ -111,7 +111,8 @@ extern int yydebug;
     EGAL = 321,
     DIFFERENT = 322,
     ET = 323,
-    OU = 324
+    OU = 324,
+    START = 325
   };
 #endif
 /* Tokens.  */
@@ -136,8 +137,8 @@ extern int yydebug;
 #define OPAFF 276
 #define IDF 277
 #define PROG 278
-#define DEBUT 279
-#define FIN 280
+#define ACC_DEBUT 279
+#define ACC_FIN 280
 #define SI 281
 #define ALORS 282
 #define SINON 283
@@ -182,6 +183,7 @@ extern int yydebug;
 #define DIFFERENT 322
 #define ET 323
 #define OU 324
+#define START 325
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
