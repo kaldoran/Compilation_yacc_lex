@@ -1,4 +1,4 @@
-% PROGRAM %
+%PROGRAM3%
 
 proc proc_1 (arg:int, arg2:char) 
   var coucou : char;
@@ -25,3 +25,6 @@ start
 start
 { ; }
 
+// Mon premier commentaire
+# Mon deuxième commentaire
+-- C'est mon dernier commentaire --
