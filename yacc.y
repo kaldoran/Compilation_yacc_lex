@@ -153,7 +153,7 @@ liste_parametres:
                 ;
           
 liste_param: un_param
-           | liste_param POINT_VIRGULE un_param
+           | liste_param VIRGULE un_param
            ;
           
 un_param: IDF DEUX_POINTS nom_type
@@ -171,7 +171,8 @@ type_simple: ENTIER
            | REEL
            | BOOLEEN
            | CARACTERE
-           | CHAINE CROCHET_OUVRANT CSTE_ENTIERE CROCHET_FERMANT
+           | CHAINE CROCHET_OUVRANT CSTE_ENTIERE CROCHET_FERMANT /* Chaîne constante */
+           | CHAINE /* Chaîne a taille variable */
            ;
 
 /* -----------------------------------------------------*/
