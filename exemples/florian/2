@@ -1,0 +1,27 @@
+program
+
+proc proc_1 () 
+    var coucou : char;
+
+{
+    if ( x == 6) then {
+        x = 3;
+    }
+    else if (y == 4) then {
+        write("Héhé");
+    }
+    else{
+        write("Pas de bol");
+    }
+};
+
+function func_1 () return int 
+    var coucou : char;
+    
+    {
+        return 1;
+    };
+
+{;}
+# pas de begin et end
+

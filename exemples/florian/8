@@ -1,0 +1,24 @@
+program
+
+{ 
+
+    while (continuer) do {
+     coucoucoucou = 7;
+        
+        for i=2; continuer; i++ do {
+            write ("coucou");
+            x= 2.;
+        }
+
+        do{
+            appel();
+        }while(i > 6);
+    
+    }
+}
+
+
+
+
+
+
