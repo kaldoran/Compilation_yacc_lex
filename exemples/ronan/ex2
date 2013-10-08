@@ -1,0 +1,38 @@
+#!/usr/bin/cpyrr
+# -*- coding: utf-8 -*-
+
+% TESTS_DE_CONDITIONS_ET_BOUCLES %
+
+# Aucune déclaration, on commence directement les instructions
+start
+{
+  if fun() + 5 * 4 + a / b * 3 > 45 or fun(p, g, a(g + 10 / 8), "bgt") then {
+    write("Ok\n");
+  }
+
+  # do while
+  do {
+    ++i;
+    
+    # Affectations dans condition + or + and
+    if j == 3 and p > 3 or b + d == 8 and (a = 4 + (i++)) then {
+      write("C'est parfait.\n");
+    }
+  } while 5 != (++j);
+
+  # for avec parenthèses + Test condition de fonctions
+  # Note: for => affectation, expression, affectation
+  for(++j; fun(5, "oo", a(10 + 8 / bg, t + "oo")); i = (++j)) do {
+    write("Quel for !\n");
+    j += 4 * 8 + 6 * fun(4 + 6 / 8, "ooo");
+  }
+
+  # Test pseudo-booléen (comme en C)
+  # true = Toute valeur différente de 0
+  # false = Toute valeur égale à 1
+  while 5 + 9 / 4 - 9 * 4 / 0.58965 * 45 do {
+    a = 3 + a;  
+  }
+
+  return 10;
+}
