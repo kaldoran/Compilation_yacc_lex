@@ -5,13 +5,17 @@
 %%
 
 \"(\\.|[^\"])*\"           {return(CSTE_CHAINE);}
-#.*\n ;
 '([^']|\\t|\\n|\\r|\\')'   {return(CSTE_CARACTERE);}
 -?(0|[1-9][0-9]*)          {return(CSTE_ENTIERE);}
 -?(0|[1-9][0-9]*)?\.[0-9]* {return(CSTE_REELLE);}
 true|false                 {return(CSTE_BOOLEENNE);}
 
-"."/[a-zA-Z_][a-zA-Z0-9_]* {return(POINT);}
+\/\*(([^\"])|(\**\"[^\"]*\"))*\*+\/ ;
+\#.* ;
+--.*-- ;
+\/\/.* ;
+
+\.[a-zA-Z_][a-zA-Z0-9_]* {return(POINT);}
 
 ".."  {return(POINT_ET_POINT);}
 "["   {return(CROCHET_OUVRANT);}
@@ -27,7 +31,8 @@ read  {return(LIRE);}
 
 "=" {return(OPAFF);}
 
-program     {return(PROG);}
+%[A-Z _0-9]*% {return(PROG);}
+
 "{"         {return(DEBUT);}
 "}"         {return(FIN);}
 if          {return(SI);}
