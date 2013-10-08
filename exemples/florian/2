@@ -1,4 +1,4 @@
-program
+%PROGRAM%
 
 proc proc_1 () 
     var coucou : char;
