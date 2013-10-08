@@ -1,6 +1,6 @@
 %PROGRAM%
 
-{ 
+start{ 
 
     while (continuer) do {
      coucoucoucou = 7;

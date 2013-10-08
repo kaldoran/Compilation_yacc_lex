@@ -1,7 +1,7 @@
  %PROGRAM%
  
  
- {
+ start{
      if x > i then {
         prem_fun(tab, var_struct);
     }else if(x) then{
@@ -17,7 +17,7 @@
     }
     
 
-    (1 > 4) ? write("coucou") : x;
+    x = (1 > 4) ? write("coucou") : 2;
 
 
  }
