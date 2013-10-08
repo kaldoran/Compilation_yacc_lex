@@ -1,0 +1,35 @@
+%PROGRAM%
+
+var x,y:entier;
+
+type type : struct
+    test_int : int;
+    test_char : char;
+end struct;
+
+
+
+function appel(x:entier, y:entier, z:char, a:string[10]) return 
+
+{ 
+
+    while continuer do {
+     coucoucoucou = 7;
+        
+        for (i=2; continuer; i=2+(i++)) do {
+            write ("coucou %d %s", x, y);
+            x= 2.;
+        }
+
+        do{
+            appel();
+        }while(i > 6);
+    
+    }
+}
+
+
+
+
+
+
