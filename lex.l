@@ -15,9 +15,10 @@ true|false                 {return(CSTE_BOOLEENNE);}
 --.*-- ;
 \/\/.* ;
 
-\.[a-zA-Z_][a-zA-Z0-9_]* {return(POINT);}
-
 ".."  {return(POINT_ET_POINT);}
+
+\./[a-zA-Z_][a-zA-Z0-9_]* {return(POINT);}
+
 "["   {return(CROCHET_OUVRANT);}
 "]"   {return(CROCHET_FERMANT);}
 ","   {return(VIRGULE);}

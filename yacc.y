@@ -247,6 +247,7 @@ tant_que: TANT_QUE expression FAIRE liste_instructions
         ;
     
 pour: POUR affectation POINT_VIRGULE expression POINT_VIRGULE affectation FAIRE liste_instructions
+    | POUR PARENTHESE_OUVRANTE affectation POINT_VIRGULE expression POINT_VIRGULE affectation PARENTHESE_FERMANTE FAIRE liste_instructions
     ;
 
 faire_tant_que: FAIRE liste_instructions TANT_QUE expression POINT_VIRGULE
