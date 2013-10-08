@@ -355,3 +355,5 @@ liste_comparateur: INFERIEUR
                  | EGAL
                  | DIFFERENT
                  ;
+
+%%
