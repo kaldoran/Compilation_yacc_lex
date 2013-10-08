@@ -1,0 +1,106 @@
+% MON PROGRAMME_IL EST COOL %
+
+#declaration des variable 
+
+#sur une ligne
+var x : string[255]; var y : float; var x , y : int;
+
+#Et en multi ligne
+var y :
+
+     bool
+;
+
+#variable pouvant contenir des chiffres , lettres [maj et minuscule ] _
+var _Variable_avec_un_9_est_assez_long 
+     : 
+     char
+;
+
+#declaration procédure 
+
+# Sans argument en multi ligne [ explosé ]
+proc procemon() 
+     var x : int;
+
+{
+          ; # On peut meme faire des procédures vides
+};
+     
+
+proc procemon() 
+     var x : string[-15]; #un commentaire placé un peu n'importe ou
+     {
+          x++;
+          write("Incrementer c'est bien");
+          x--;
+          write("Decrementer c'est mieu");
+          #Ternaire ? : ; 
+          x = (x - x > x) ? "oui" : "non !";
+
+          for x = x or x * x; "XD" ; x = ( 5 / proce()  ) do {
+               write("",x);
+               ;
+               ;
+               ;
+               ;
+               ;
+               ;
+               ;
+               #les ; sont la vie
+               ;
+               ;
+               ;
+               ;
+          -- un commentaire --
+          ------------ Et un autre un peu plus long  qui montre bien la sépération ----------------
+          }
+          
+     /* Le for ayant le pire ratio longueur / utilité 
+     
+     Suivit d'un commentaire multi ligne
+     
+     qui il faut l'avouer "/* Peut contenir un commentaire dans un commentaire */" */
+     };
+     
+proc proception() {
+               read (x, y , j_aime_bien_y);
+};
+
+function fonction_avec_le_nom_le_plus_original_du_monde_mais_un_peu_long_au_final (x :int ; y:string[250]; x:float ; y :char) return char {
+     return;
+
+};
+
+var _Variable_avec_un_9_est_assez_long_le_retour
+     : 
+     int
+;
+
+#tableau le plus cool du monde 
+
+                                  -- DEBUT DU PROGRAMME --
+
+// XD
+/* On arrive aux type */
+-- et on peut varier le type de commentaire --
+# Quel est le but ? aucune idée 
+// j m'amuse
+type trop_cool : array[1 .. 2,8 .. 9,9 .. 0] of int;
+
+
+type encore_plus_cool : struct 
+     un_champ : int; de_patate : char; de_carotte: char;
+     de_salade : char;
+     
+end struct;
+
+var __________________ : string[-99999999];
+
+------------------------------------------------------------------------------------------------------
+{ write("Le programme le plus cool du monde");
+// "commentaire"
+     i = "cha\"ine"; // "commentaire"
+
+}
+
