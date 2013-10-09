@@ -6,6 +6,7 @@
 # Aucune déclaration, on commence directement les instructions
 start
 {
+  # Test bizarre mais qui marche normalement
   if fun() + 5 * 4 + a / b * 3 > 45 or fun(p, g, a(g + 10 / 8), "bgt") then {
     write("Ok\n");
   }
@@ -32,6 +33,22 @@ start
   # false = Toute valeur égale à 1
   while 5 + 9 / 4 - 9 * 4 / 0.58965 * 45 do {
     a = 3 + a;  
+  }
+
+  # Tests de la négation
+  if !!!!5 or !false then {
+    write("Ca marche !\n");
+  }
+
+  # Tests de négation complexe
+  if !a + !b * !c == !true + !false * !false then {
+    a += !f - !fun(!!true + !k / t);
+  }  
+
+  # Test incompréhensible mais qui doit marcher !
+  # Mélange d'affectations dans des conditions + négations + différents types + or + and
+  while (a + b + fun((d = 58 + 6 / !a * !b + !c - true), !true)) / j + 3 * k - (b = true ? "a" : "b") and k == 0 or j < k * 9 + !fun(b - 5) * !fun(k / 10) or (a = b - 5 > 8 * fun(!z) ? true : false) do {
+    write("Hum hum");
   }
 
   return 10;

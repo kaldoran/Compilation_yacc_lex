@@ -330,7 +330,6 @@ expression: expression PLUS expression2
           | test
           ;
           
-
 expression2: expression2 MULTIPLICATION expression3 
            | expression2 DIVISION expression3
 	   | expression2 MODULO expression3
@@ -347,6 +346,7 @@ expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | variable
            | appel
            | PARENTHESE_OUVRANTE affectation PARENTHESE_FERMANTE
+           | NEGATION expression3 /* Autoriser: !!!5 par exemple */
            ;   
 
 test: expression liste_comparateur expression2
