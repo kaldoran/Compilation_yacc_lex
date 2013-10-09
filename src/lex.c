@@ -460,6 +460,7 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
+<<<<<<< HEAD
 static yyconst flex_int16_t yy_accept[191] =
     {   0,
         0,    0,   74,   73,   72,   61,   73,    7,   60,   73,
@@ -482,6 +483,62 @@ static yyconst flex_int16_t yy_accept[191] =
        35,   71,   71,   34,   71,    0,   45,   71,   71,   43,
        71,   71,   71,   28,   19,   71,    0,   71,   31,   48,
        32,   40,   42,    0,   71,    0,   38,    0,   33,    0
+=======
+static yyconst flex_int16_t yy_acclist[234] =
+    {   0,
+       74,   73,   72,   73,   61,   73,   73,    2,   73,   60,
+       73,   73,   10,   73,   11,   73,   58,   73,   56,   73,
+        8,   73,   57,   73,   73,16398,   59,   73,   17,   73,
+       17,   73,   12,   73,    9,   73,   63,   73,   13,   73,
+       65,   73,   62,   73,   71,   73,    6,   73,    7,   73,
+       71,   73,   71,   73,   71,   73,   71,   73,   71,   73,
+       71,   73,   71,   73,   71,   73,   71,   73,   71,   73,
+       71,   73,   71,   73,   71,   73,   71,   73,   23,   73,
+       24,   73,   68,   15,    2,   22,   53,   51,   54,   49,
+       55,   17,   17,   50,    5,   18, 8206,    4,   52,   17,
+
+       64,   67,   66,   71,   71,   71,   71,   71,   71,   71,
+       30,   71,   71,   71,   71,   71,   71,   71,   25,   71,
+       71,   36,   71,   70,   71,   71,   71,   71,   71,   71,
+       71,   71,   71,   71,   71,   15,   16,   16, 8206,    4,
+       69,   71,   71,   71,   71,   71,   71,   71,   71,   71,
+       71,   29,   71,   71,   44,   71,   71,   71,   71,   71,
+       71,   71,   71,   71,   71,   39,   71,   71,   71,    3,
+        1,   71,   46,   71,   41,   71,   47,   71,   71,   27,
+       71,   71,   71,   71,   37,   71,   21,   71,   71,   71,
+       71,   71,   71,   26,   71,   19,   71,   35,   71,   71,
+
+       71,   34,   71,   71,   45,   71,   71,   71,   43,   71,
+       71,   71,   71,   28,   71,   20,   71,   71,   71,   31,
+       71,   48,   71,   32,   71,   40,   71,   42,   71,   71,
+       38,   71,   33
+    } ;
+
+static yyconst flex_int16_t yy_accept[192] =
+    {   0,
+        1,    1,    1,    2,    3,    5,    7,    8,   10,   12,
+       13,   15,   17,   19,   21,   23,   25,   27,   29,   31,
+       33,   35,   37,   39,   41,   43,   45,   47,   49,   51,
+       53,   55,   57,   59,   61,   63,   65,   67,   69,   71,
+       73,   75,   77,   79,   81,   83,   84,   84,   85,   85,
+       86,   86,   87,   88,   88,   88,   89,   90,   91,   92,
+       92,   93,   94,   95,   96,   97,   98,   98,   99,  100,
+      101,  102,  103,  104,  105,  106,  107,  108,  109,  110,
+      111,  113,  114,  115,  116,  117,  118,  119,  121,  122,
+      124,  126,  127,  128,  129,  130,  131,  132,  133,  134,
+
+      135,  136,  136,  137,  137,  138,  139,  139,  139,  140,
+      140,  140,  140,  141,  143,  144,  145,  146,  147,  148,
+      149,  150,  151,  152,  154,  155,  157,  158,  159,  160,
+      161,  162,  163,  164,  165,  166,  168,  169,  170,  171,
+      171,  172,  173,  175,  177,  179,  180,  182,  182,  183,
+      184,  185,  187,  189,  190,  191,  192,  193,  194,  196,
+      198,  200,  201,  202,  204,  205,  205,  207,  208,  209,
+      211,  212,  213,  214,  216,  218,  219,  219,  220,  222,
+      224,  226,  228,  230,  230,  231,  231,  233,  233,  234,
+      234
+
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1
     } ;
 
 static yyconst flex_int32_t yy_ec[256] =
@@ -660,36 +717,76 @@ static yyconst flex_int16_t yy_chk[328] =
       190,  190,  190,  190,  190,  190,  190
     } ;
 
+<<<<<<< HEAD
 static yy_state_type yy_last_accepting_state;
 static char *yy_last_accepting_cpos;
+=======
+/* Table of booleans, true if rule could match eol. */
+static yyconst flex_int32_t yy_rule_can_match_eol[74] =
+    {   0,
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,     };
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1
 
 extern int yy_flex_debug;
 int yy_flex_debug = 1;
 
 static yyconst flex_int16_t yy_rule_linenum[73] =
     {   0,
-        7,    8,    9,   10,   11,   13,   14,   15,   16,   18,
-       20,   21,   22,   23,   24,   25,   26,   27,   29,   30,
-       32,   34,   36,   37,   38,   39,   40,   41,   42,   43,
-       44,   45,   46,   47,   48,   49,   50,   51,   52,   53,
-       54,   55,   56,   58,   59,   60,   61,   62,   64,   65,
-       66,   67,   68,   70,   71,   72,   73,   74,   75,   76,
-       77,   78,   80,   81,   82,   83,   84,   85,   87,   88,
-       90,   92
+        7,    8,    9,   10,   12,   13,   14,   15,   16,   17,
+       18,   19,   20,   22,   24,   25,   26,   27,   28,   30,
+       31,   33,   35,   36,   37,   38,   39,   40,   41,   42,
+       43,   44,   45,   46,   47,   48,   49,   50,   51,   52,
+       53,   54,   55,   57,   58,   59,   60,   61,   63,   64,
+       65,   66,   67,   69,   70,   71,   72,   73,   74,   75,
+       76,   77,   79,   80,   81,   82,   83,   84,   86,   87,
+       89,   91
     } ;
 
+<<<<<<< HEAD
 /* The intent behind this definition is that it'll catch
  * any uses of REJECT which flex missed.
  */
 #define REJECT reject_used_but_not_detected
 #define yymore() yymore_used_but_not_detected
+=======
+static yy_state_type *yy_state_buf=0, *yy_state_ptr=0;
+static char *yy_full_match;
+static int yy_lp;
+static int yy_looking_for_trail_begin = 0;
+static int yy_full_lp;
+static int *yy_full_state;
+#define YY_TRAILING_MASK 0x2000
+#define YY_TRAILING_HEAD_MASK 0x4000
+#define REJECT \
+{ \
+*yy_cp = (yy_hold_char); /* undo effects of setting up yytext */ \
+yy_cp = (yy_full_match); /* restore poss. backed-over text */ \
+(yy_lp) = (yy_full_lp); /* restore orig. accepting pos. */ \
+(yy_state_ptr) = (yy_full_state); /* restore orig. state */ \
+yy_current_state = *(yy_state_ptr); /* restore curr. state */ \
+++(yy_lp); \
+goto find_rule; \
+}
+
+static int yy_more_offset = 0;
+static int yy_prev_more_offset = 0;
+#define yymore() ((yy_more_offset) = yy_flex_strlen( yytext ))
+#define YY_NEED_STRLEN
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "lex.l"
 #line 2 "lex.l"
   #include "yacc.h"
+<<<<<<< HEAD
 #line 693 "<stdout>"
+=======
+#line 767 "<stdout>"
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1
 
 #define INITIAL 0
 
@@ -939,7 +1036,11 @@ YY_DECL
 #line 5 "lex.l"
 
 
+<<<<<<< HEAD
 #line 943 "<stdout>"
+=======
+#line 1012 "<stdout>"
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1
 
 	if ( !(yy_init) )
 		{
@@ -1012,12 +1113,54 @@ yy_match:
 
 yy_find_action:
 /* %% [10.0] code to find the action number goes here */
+<<<<<<< HEAD
 		yy_act = yy_accept[yy_current_state];
 		if ( yy_act == 0 )
 			{ /* have to back up */
 			yy_cp = (yy_last_accepting_cpos);
 			yy_current_state = (yy_last_accepting_state);
 			yy_act = yy_accept[yy_current_state];
+=======
+		yy_current_state = *--(yy_state_ptr);
+		(yy_lp) = yy_accept[yy_current_state];
+find_rule: /* we branch to this label when backing up */
+		for ( ; ; ) /* until we find what rule we matched */
+			{
+			if ( (yy_lp) && (yy_lp) < yy_accept[yy_current_state + 1] )
+				{
+				yy_act = yy_acclist[(yy_lp)];
+				if ( yy_act & YY_TRAILING_HEAD_MASK ||
+				     (yy_looking_for_trail_begin) )
+					{
+					if ( yy_act == (yy_looking_for_trail_begin) )
+						{
+						(yy_looking_for_trail_begin) = 0;
+						yy_act &= ~YY_TRAILING_HEAD_MASK;
+						break;
+						}
+					}
+				else if ( yy_act & YY_TRAILING_MASK )
+					{
+					(yy_looking_for_trail_begin) = yy_act & ~YY_TRAILING_MASK;
+					(yy_looking_for_trail_begin) |= YY_TRAILING_HEAD_MASK;
+					(yy_full_match) = yy_cp;
+					(yy_full_state) = (yy_state_ptr);
+					(yy_full_lp) = (yy_lp);
+					}
+				else
+					{
+					(yy_full_match) = yy_cp;
+					(yy_full_state) = (yy_state_ptr);
+					(yy_full_lp) = (yy_lp);
+					break;
+					}
+				++(yy_lp);
+				goto find_rule;
+				}
+			--yy_cp;
+			yy_current_state = *--(yy_state_ptr);
+			(yy_lp) = yy_accept[yy_current_state];
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1
 			}
 
 		YY_DO_BEFORE_ACTION;
@@ -1057,374 +1200,383 @@ case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
 #line 7 "lex.l"
-{return(CSTE_CHAINE);}
+;
 	YY_BREAK
 case 2:
-/* rule 2 can match eol */
 YY_RULE_SETUP
 #line 8 "lex.l"
-{return(CSTE_CARACTERE);}
+;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
 #line 9 "lex.l"
-{return(CSTE_ENTIERE);}
+;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 10 "lex.l"
-{return(CSTE_REELLE);}
+;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 11 "lex.l"
-{return(CSTE_BOOLEENNE);}
+#line 12 "lex.l"
+{return(POINT_ET_POINT);}
 	YY_BREAK
 case 6:
-/* rule 6 can match eol */
 YY_RULE_SETUP
 #line 13 "lex.l"
-;
+{return(CROCHET_OUVRANT);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
 #line 14 "lex.l"
-;
+{return(CROCHET_FERMANT);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
 #line 15 "lex.l"
-;
+{return(VIRGULE);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
 #line 16 "lex.l"
-;
+{return(POINT_VIRGULE);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 18 "lex.l"
-{return(POINT);}
+#line 17 "lex.l"
+{return(PARENTHESE_OUVRANTE);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 20 "lex.l"
-{return(POINT_ET_POINT);}
+#line 18 "lex.l"
+{return(PARENTHESE_FERMANTE);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 21 "lex.l"
-{return(CROCHET_OUVRANT);}
+#line 19 "lex.l"
+{return(DEUX_POINTS);}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 22 "lex.l"
-{return(CROCHET_FERMANT);}
+#line 20 "lex.l"
+{return(OPAFF);}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 23 "lex.l"
-{return(VIRGULE);}
+#line 22 "lex.l"
+{return(POINT);}
 	YY_BREAK
 case 15:
+/* rule 15 can match eol */
 YY_RULE_SETUP
 #line 24 "lex.l"
-{return(POINT_VIRGULE);}
+{return(CSTE_CHAINE);}
 	YY_BREAK
 case 16:
+/* rule 16 can match eol */
 YY_RULE_SETUP
 #line 25 "lex.l"
-{return(PARENTHESE_OUVRANTE);}
+{return(CSTE_CARACTERE);}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
 #line 26 "lex.l"
-{return(PARENTHESE_FERMANTE);}
+{return(CSTE_ENTIERE);}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
 #line 27 "lex.l"
-{return(DEUX_POINTS);}
+{return(CSTE_REELLE);}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 29 "lex.l"
-{return(ECRIRE);}
+#line 28 "lex.l"
+{return(CSTE_BOOLEENNE);}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
 #line 30 "lex.l"
-{return(LIRE);} 
+{return(ECRIRE);}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 32 "lex.l"
-{return(OPAFF);}
+#line 31 "lex.l"
+{return(LIRE);} 
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 34 "lex.l"
+#line 33 "lex.l"
 {return(PROG);}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 36 "lex.l"
+#line 35 "lex.l"
 {return(ACC_DEBUT);}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 37 "lex.l"
+#line 36 "lex.l"
 {return(ACC_FIN);}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 38 "lex.l"
+#line 37 "lex.l"
 {return(SI);}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 39 "lex.l"
+#line 38 "lex.l"
 {return(ALORS);}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 40 "lex.l"
+#line 39 "lex.l"
 {return(SINON);}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 41 "lex.l"
+#line 40 "lex.l"
 {return(TANT_QUE);}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 42 "lex.l"
+#line 41 "lex.l"
 {return(POUR);}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 43 "lex.l"
+#line 42 "lex.l"
 {return(FAIRE);}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 44 "lex.l"
+#line 43 "lex.l"
 {return(RETOURNE);}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 45 "lex.l"
+#line 44 "lex.l"
 {return(STRUCT);}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 46 "lex.l"
+#line 45 "lex.l"
 {return(FSTRUCT);}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 47 "lex.l"
+#line 46 "lex.l"
 {return(TABLEAU);}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 48 "lex.l"
+#line 47 "lex.l"
 {return(TYPE);}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 49 "lex.l"
+#line 48 "lex.l"
 {return(DE);}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 50 "lex.l"
+#line 49 "lex.l"
 {return(PROCEDURE);}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 51 "lex.l"
+#line 50 "lex.l"
 {return(FONCTION);}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 52 "lex.l"
+#line 51 "lex.l"
 {return(VARIABLE);}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 53 "lex.l"
+#line 52 "lex.l"
 {return(SWITCH);}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 54 "lex.l"
+#line 53 "lex.l"
 {return(CASE);}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 55 "lex.l"
+#line 54 "lex.l"
 {return(DEFAULT);}
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 56 "lex.l"
+#line 55 "lex.l"
 {return(START);}
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 58 "lex.l"
+#line 57 "lex.l"
 {return(ENTIER);}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 59 "lex.l"
+#line 58 "lex.l"
 {return(REEL);}
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 60 "lex.l"
+#line 59 "lex.l"
 {return(BOOLEEN);}
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 61 "lex.l"
+#line 60 "lex.l"
 {return(CARACTERE);}
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 62 "lex.l"
+#line 61 "lex.l"
 {return(CHAINE);}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 64 "lex.l"
+#line 63 "lex.l"
 {return(PLUS_EGAL);}
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 65 "lex.l"
+#line 64 "lex.l"
 {return(MOINS_EGAL);}
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 66 "lex.l"
+#line 65 "lex.l"
 {return(MULT_EGAL);}
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 67 "lex.l"
+#line 66 "lex.l"
 {return(DIV_EGAL);}
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 68 "lex.l"
+#line 67 "lex.l"
 {return(MODULO_EGAL);}
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 70 "lex.l"
+#line 69 "lex.l"
 {return(PLUS_ET_PLUS);}
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 71 "lex.l"
+#line 70 "lex.l"
 {return(MOINS_ET_MOINS);}
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 72 "lex.l"
+#line 71 "lex.l"
 {return(PLUS);}
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 73 "lex.l"
+#line 72 "lex.l"
 {return(MOINS);}
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 74 "lex.l"
+#line 73 "lex.l"
 {return(MULTIPLICATION);}
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 75 "lex.l"
+#line 74 "lex.l"
 {return(DIVISION);}
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 76 "lex.l"
+#line 75 "lex.l"
 {return(MODULO);}
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 77 "lex.l"
+#line 76 "lex.l"
 {return(NEGATION);}
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 78 "lex.l"
+#line 77 "lex.l"
 {return(INTERROGATION);}
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 80 "lex.l"
+#line 79 "lex.l"
 {return(INFERIEUR);}
 	YY_BREAK
 case 64:
 YY_RULE_SETUP
-#line 81 "lex.l"
+#line 80 "lex.l"
 {return(INFERIEUR_OU_EGAL);}
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 82 "lex.l"
+#line 81 "lex.l"
 {return(SUPERIEUR);}
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 83 "lex.l"
+#line 82 "lex.l"
 {return(SUPERIEUR_OU_EGAL);}
 	YY_BREAK
 case 67:
 YY_RULE_SETUP
-#line 84 "lex.l"
+#line 83 "lex.l"
 {return(EGAL);}
 	YY_BREAK
 case 68:
 YY_RULE_SETUP
-#line 85 "lex.l"
+#line 84 "lex.l"
 {return(DIFFERENT);}
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
-#line 87 "lex.l"
+#line 86 "lex.l"
 {return(ET);}
 	YY_BREAK
 case 70:
 YY_RULE_SETUP
-#line 88 "lex.l"
+#line 87 "lex.l"
 {return(OU);}
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 90 "lex.l"
+#line 89 "lex.l"
 {return(IDF);}
 	YY_BREAK
 case 72:
 /* rule 72 can match eol */
 YY_RULE_SETUP
-#line 92 "lex.l"
+#line 91 "lex.l"
 ;
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 94 "lex.l"
 ECHO;
 	YY_BREAK
 #line 1426 "<stdout>"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
+=======
+#line 92 "lex.l"
+ECHO;
+	YY_BREAK
+#line 1537 "<stdout>"
+			case YY_STATE_EOF(INITIAL):
+				yyterminate();
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1
 
 	case YY_END_OF_BUFFER:
 		{
@@ -2557,6 +2709,7 @@ void yyfree (void * ptr )
 
 /* %ok-for-header */
 
+<<<<<<< HEAD
 #line 94 "lex.l"
 
 
@@ -2565,3 +2718,6 @@ void yyerror (char *s) {
     fprintf (stderr, "%s\n", s);
 }
 
+=======
+#line 92 "lex.l"
+>>>>>>> f83f815b203c2bfbfe4d7d851f05d8bde9d1fbd1

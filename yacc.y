@@ -246,8 +246,20 @@ condition: SI expression ALORS liste_instructions
 tant_que: TANT_QUE expression FAIRE liste_instructions
         ;
     
-pour: POUR affectation POINT_VIRGULE expression POINT_VIRGULE affectation FAIRE liste_instructions
+pour: POUR pour_cont FAIRE liste_instructions
+    | POUR PARENTHESE_OUVRANTE pour_cont PARENTHESE_FERMANTE FAIRE liste_instructions
     ;
+
+pour_cont: pour_a POINT_VIRGULE pour_e POINT_VIRGULE pour_a
+         ;
+
+pour_a: affectation
+      |
+      ;
+
+pour_e: expression
+      |
+      ;
 
 faire_tant_que: FAIRE liste_instructions TANT_QUE expression POINT_VIRGULE
               ;
@@ -329,7 +341,6 @@ expression: expression PLUS expression2
           | test
           ;
           
-
 expression2: expression2 MULTIPLICATION expression3 
            | expression2 DIVISION expression3
 	   | expression2 MODULO expression3
@@ -346,6 +357,7 @@ expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | variable
            | appel
            | PARENTHESE_OUVRANTE affectation PARENTHESE_FERMANTE
+           | NEGATION expression3 /* Autoriser: !!!5 par exemple */
            ;   
 
 test: expression liste_comparateur expression2

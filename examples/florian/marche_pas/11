@@ -1,0 +1,10 @@
+%PROGRAM% 
+
+type type_normal : struct
+    test_int : int;
+    test_char : char;
+    test_tableau : array[x+1..y,1..9] of int;
+end struct;
+
+
+

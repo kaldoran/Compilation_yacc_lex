@@ -3,7 +3,7 @@
 start{ 
 
     while (continuer) do {
-     coucoucoucou = 7;
+        coucoucoucou = 7;
         
         for i=2; continuer; i++ do {
             write ("coucou");

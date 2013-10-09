@@ -2,23 +2,21 @@
  
  
  start{
-     if x > i then {
+    if x > i then {
         prem_fun(tab, var_struct);
     }else if(x) then{
         ;
     }
     else{
         switch i == 9 {
-            case i==1 : write("coucou");
+            case i==1 : {write("coucou");}
             case true : {x++; --i; }
             default : read(annee);
-
         }
     }
     
 
-    x = (1 > 4) ? write("coucou") : 2;
-
+    x = (1 > 4) ? 3 : 2;
 
  }
 

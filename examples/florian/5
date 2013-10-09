@@ -11,18 +11,23 @@ var variable_carac : char;
 var variable_chaine : chaine;
 var variable_int : int;
 
-proc prem_proc (arg:type_tableau; arg_2:type_normal) 
-        var i:int;
-start{
-    while (1 > 2) do {
-        i += 1;
-    }
-};
+proc prem_proc (arg:type_tableau, arg_2:type_normal) 
+    var i:int;
+    
+    start{
+        while (1 > 2) do
+        {
+            write ("coucou les amis"); 
+        }
+    };
 
 
 var coucou:char;
+
 start{
     coucou = 0;
+
+    prem_proc ("hihi", 0);
 }
 
 

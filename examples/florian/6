@@ -11,7 +11,7 @@ var variable_carac : char;
 var tab : type_tableau;
 var var_struct : type_normal;
 
-function prem_fun (arg:type_tableau; arg_2:type_normal) return int
+function prem_fun (arg:type_tableau, arg_2:type_normal) return int
 var i:int;
 var variable_carac : char;
 var tab : type_tableau;
