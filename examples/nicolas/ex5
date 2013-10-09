@@ -1,0 +1,25 @@
+% PROGRAMME EXOTIQUE %
+		--- La programmation exotique ---
+			--	--
+   
+var banana : int;
+
+function mix(ensembleFruit:float) return char 
+start {
+	return "jus de fruit";
+};
+
+type smoothie : struct
+	fraise : char;
+	nb_fraise : int;
+	banane : char;
+	nb_banane : int;
+end struct;
+
+
+start {
+	banane = "banane" + "orange" > "noix de coco";
+	return "salade de fruit";
+	write("on peut ajouter une %s ",mangue);
+}
+
