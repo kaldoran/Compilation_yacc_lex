@@ -4,33 +4,31 @@
 
 %%
 
-\"(\\.|[^\"])*\"           {return(CSTE_CHAINE);}
-'([^']|\\t|\\n|\\r|\\')'   {return(CSTE_CARACTERE);}
--?(0|[1-9][0-9]*)          {return(CSTE_ENTIERE);}
--?(0|[1-9][0-9]*)?\.[0-9]* {return(CSTE_REELLE);}
-true|false                 {return(CSTE_BOOLEENNE);}
-
 \/\*(([^\"])|(\**\"[^\"]*\"))*\*+\/ ;
 \#.* ;
 --.*-- ;
 \/\/.* ;
 
-".."  {return(POINT_ET_POINT);}
+".." {return(POINT_ET_POINT);}
+"["  {return(CROCHET_OUVRANT);}
+"]"  {return(CROCHET_FERMANT);}
+","  {return(VIRGULE);}
+";"  {return(POINT_VIRGULE);}
+"("  {return(PARENTHESE_OUVRANTE);}
+")"  {return(PARENTHESE_FERMANTE);}
+":"  {return(DEUX_POINTS);}
+"="  {return(OPAFF);}
 
 \./[a-zA-Z_][a-zA-Z0-9_]* {return(POINT);}
 
-"["   {return(CROCHET_OUVRANT);}
-"]"   {return(CROCHET_FERMANT);}
-","   {return(VIRGULE);}
-";"   {return(POINT_VIRGULE);}
-"("   {return(PARENTHESE_OUVRANTE);}
-")"   {return(PARENTHESE_FERMANTE);}
-":"   {return(DEUX_POINTS);}
+\"(\\.|[^\"])*\"           {return(CSTE_CHAINE);}
+'([^']|\\t|\\n|\\r|\\')'   {return(CSTE_CARACTERE);}
+-?(0|[1-9][0-9]*)          {return(CSTE_ENTIERE);}
+-?(0|[1-9][0-9]*)?\.[0-9]+ {return(CSTE_REELLE);}
+true|false                 {return(CSTE_BOOLEENNE);}
 
 write {return(ECRIRE);}
 read  {return(LIRE);} 
-
-"=" {return(OPAFF);}
 
 %[A-Z _0-9]*% {return(PROG);}
 
