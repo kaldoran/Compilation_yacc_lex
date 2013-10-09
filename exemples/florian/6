@@ -17,7 +17,7 @@ var variable_carac : char;
 var tab : type_tableau;
 var var_struct : type_normal;
 
-{
+start{
     while (1 > 2) do
     { write ("coucou les amis"); }
 };
@@ -25,7 +25,7 @@ var var_struct : type_normal;
 
 var coucou:char;
 
-{
+start{
 
     coucou = type_normal.test_char;
 

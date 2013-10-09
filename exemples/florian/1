@@ -11,5 +11,5 @@ var variable_carac : char;
 var variable_chaine : chaine;
 var variable_int : int;
 
-{ variable_int = variable_carac; }
+start{ variable_int = variable_carac; }
 

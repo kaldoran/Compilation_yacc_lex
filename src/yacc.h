@@ -34,7 +34,6 @@
 /* Tokens.  */
 #ifndef YYTOKENTYPE
 # define YYTOKENTYPE
-<<<<<<< HEAD
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
@@ -59,8 +58,8 @@
      OPAFF = 276,
      IDF = 277,
      PROG = 278,
-     DEBUT = 279,
-     FIN = 280,
+     ACC_DEBUT = 279,
+     ACC_FIN = 280,
      SI = 281,
      ALORS = 282,
      SINON = 283,
@@ -104,81 +103,9 @@
      EGAL = 321,
      DIFFERENT = 322,
      ET = 323,
-     OU = 324
+     OU = 324,
+     START = 325
    };
-=======
-  enum yytokentype
-  {
-    VIDE = 258,
-    ECRIRE = 259,
-    LIRE = 260,
-    CROCHET_OUVRANT = 261,
-    CROCHET_FERMANT = 262,
-    VIRGULE = 263,
-    POINT_VIRGULE = 264,
-    POINT = 265,
-    PARENTHESE_OUVRANTE = 266,
-    PARENTHESE_FERMANTE = 267,
-    DEUX_POINTS = 268,
-    POINT_ET_POINT = 269,
-    INTERROGATION = 270,
-    CSTE_ENTIERE = 271,
-    CSTE_REELLE = 272,
-    CSTE_BOOLEENNE = 273,
-    CSTE_CARACTERE = 274,
-    CSTE_CHAINE = 275,
-    OPAFF = 276,
-    IDF = 277,
-    PROG = 278,
-    ACC_DEBUT = 279,
-    ACC_FIN = 280,
-    SI = 281,
-    ALORS = 282,
-    SINON = 283,
-    TANT_QUE = 284,
-    POUR = 285,
-    FAIRE = 286,
-    RETOURNE = 287,
-    STRUCT = 288,
-    FSTRUCT = 289,
-    TABLEAU = 290,
-    TYPE = 291,
-    DE = 292,
-    PROCEDURE = 293,
-    FONCTION = 294,
-    VARIABLE = 295,
-    SWITCH = 296,
-    CASE = 297,
-    DEFAULT = 298,
-    ENTIER = 299,
-    REEL = 300,
-    BOOLEEN = 301,
-    CARACTERE = 302,
-    CHAINE = 303,
-    PLUS = 304,
-    MOINS = 305,
-    MULTIPLICATION = 306,
-    DIVISION = 307,
-    MODULO = 308,
-    PLUS_ET_PLUS = 309,
-    MOINS_ET_MOINS = 310,
-    NEGATION = 311,
-    PLUS_EGAL = 312,
-    MOINS_EGAL = 313,
-    MULT_EGAL = 314,
-    DIV_EGAL = 315,
-    MODULO_EGAL = 316,
-    INFERIEUR = 317,
-    SUPERIEUR = 318,
-    INFERIEUR_OU_EGAL = 319,
-    SUPERIEUR_OU_EGAL = 320,
-    EGAL = 321,
-    DIFFERENT = 322,
-    ET = 323,
-    OU = 324,
-    START = 325
-  };
->>>>>>> 7c70f279c2dc6683514d60450be1cbd0202a9731
 #endif
 /* Tokens.  */
 #define VIDE 258
