@@ -246,9 +246,20 @@ condition: SI expression ALORS liste_instructions
 tant_que: TANT_QUE expression FAIRE liste_instructions
         ;
     
-pour: POUR affectation POINT_VIRGULE expression POINT_VIRGULE affectation FAIRE liste_instructions
-    | POUR PARENTHESE_OUVRANTE affectation POINT_VIRGULE expression POINT_VIRGULE affectation PARENTHESE_FERMANTE FAIRE liste_instructions
+pour: POUR pour_cont FAIRE liste_instructions
+    | POUR PARENTHESE_OUVRANTE pour_cont PARENTHESE_FERMANTE FAIRE liste_instructions
     ;
+
+pour_cont: pour_a POINT_VIRGULE pour_e POINT_VIRGULE pour_a
+         ;
+
+pour_a: affectation
+      |
+      ;
+
+pour_e: expression
+      |
+      ;
 
 faire_tant_que: FAIRE liste_instructions TANT_QUE expression POINT_VIRGULE
               ;
