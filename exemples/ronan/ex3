@@ -1,0 +1,42 @@
+#!/usr/bin/cpyrr
+# -*- coding: utf-8 -*-
+
+% TESTS_AFFECTATIONS_DECLARATIONS %
+
+var x, y : int;
+var buffer : string[255];
+var _b : bool;
+
+start
+{
+  x = 25;
+  y = 3;
+
+  if rand() % 20 + 5 > x then {
+    buffer = "Hello !";
+  }
+
+  # Tests variés : Ternaires, affectations, négation...
+  x += 14 / 3 + y - 2;
+  y = buffer == "Hello !" ? 0 : 1;
+  x = ((y = 0) + 32 == x % 10) ? 100 : 50;
+
+  x %= 10;
+  y %= (y = 3) + x * 10;
+
+  _b = true;
+  _b = !x + !!(x / 100);
+
+  do {
+    ++x;
+    y = (x++) - 10;
+    y += 8 + (x += 10) - 3 * x;
+    buffer += "!";  
+  } while _b;
+
+  for(x = 0; (++y); ++x) do {
+    y -= 3 + x * 10 - (x += rand() * x) / (x + y + 99) + !x * 5;
+  }
+
+  return 0;
+}
