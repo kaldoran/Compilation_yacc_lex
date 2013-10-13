@@ -1,17 +1,17 @@
 # ------------------------------------------------ #
-# Auteurs:                                         #
-# 						   #
-#   ABHAMON Ronan	                           #
-#   BIGARD Florian				   #
-#   REYNAUD Nicolas				   #
+# Auteurs: #
+# #
+# ABHAMON Ronan #
+# BIGARD Florian #
+# REYNAUD Nicolas #
 # ------------------------------------------------ #
 
 Utilisation du projet :
 
-I   - Se positionner à la racine du projet
-II  - Utiliser la commande "./build make" pour construire l'executable
-III - Executer la commande "./test_examples" pour vérifier la fiabilité des programmes de tests. 
-      "true" correspond à un parsage parfait, "false" à une erreur. 
+I - Se positionner à la racine du projet
+II - Utiliser la commande "./build make" pour construire l'executable
+III - Executer la commande "./test_examples" pour vérifier la fiabilité des programmes de tests.
+      "true" correspond à un parsage parfait, "false" à une erreur.
       Certains programmes sont de ce fait foncièrement faux.
 
 Note : La commande "./prog < <prog source>" donne les détails du parsage.
