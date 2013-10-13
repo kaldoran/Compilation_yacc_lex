@@ -7,7 +7,7 @@ start{
         
         for i=2; continuer; i++ do {
             write ("coucou");
-            x= 2.;
+            x= 2.0;
         }
 
         do{
