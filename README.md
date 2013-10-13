@@ -13,12 +13,12 @@ Utilisation du projet
 1. Se positionner à la racine du projet
 2. Utiliser la commande 
 
-    ./build make
+	./build make
 	
- pour construire l'executable
+pour construire l'executable
 3. Executer la commande : 
 
-    ./test_examples
+	./test_examples
 	
 pour vérifier la fiabilité des programmes de tests.
 **true** correspond à un parsage parfait, **false** à une erreur. 
