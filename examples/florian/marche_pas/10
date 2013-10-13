@@ -10,6 +10,7 @@ function appel(x:entier, y:entier, z:char, a:string[10]) return string
         }
     };
 
+# Ne fonctionne pas car il n'y a pas d'instructions
 
 
 

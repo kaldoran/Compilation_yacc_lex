@@ -1,5 +1,7 @@
 %PROGRAM%
 
+
+# La fonction ne fonctionne pas car il doit y avoir un entier dans string, il faut allouer un certain nombre de cases du tableau
 function appel(x:entier, y:entier, z:char, a:string[]) return string
     var i:int;
     

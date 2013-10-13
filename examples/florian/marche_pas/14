@@ -16,7 +16,8 @@ start{
     
     }
 
-    # Ou sans affectation, le ternaire ne doit pas fonctionner
+    # Write ne renvoie rien donc ne peut pas être dans un ternaire
+    # Ou le ternaire sans affectation, le ternaire ne doit pas fonctionner
     x = (x > 7) ? write('coucou') : x;
 
 }
