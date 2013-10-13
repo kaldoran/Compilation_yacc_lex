@@ -1,0 +1,19 @@
+#!/usr/bin/ruby
+
+# Dossier des exemples
+ex_files = "#{Dir.pwd}/examples"
+
+# Nom du programme
+$progname = "#{Dir.pwd}/prog"
+
+def exec_examples(dir, file)
+  if File.directory?("#{dir}/#{file}")
+    Dir.foreach("#{dir}/#{file}") { |f| exec_examples(dir + "#{file}/", f) if f != "." and f != ".."}
+  else
+    res = system("#{$progname} < \"#{dir}#{file}\" >& /dev/null")
+    puts "#{File.basename dir}/#{file}: #{res}"
+  end
+end
+
+exec_examples(ex_files, "")
+ 

@@ -89,3 +89,9 @@ or  {return(OU);}
 [a-zA-Z_][a-zA-Z0-9_]* {return(IDF);}
 
 " "|\n|\t ;
+
+%%
+
+void yyerror (char *s) {
+    fprintf (stderr, "%s\n", s);
+}

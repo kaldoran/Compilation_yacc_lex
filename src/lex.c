@@ -417,6 +417,7 @@ void yyfree (void *  );
 #define YY_AT_BOL() (YY_CURRENT_BUFFER_LVALUE->yy_at_bol)
 
 /* %% [1.0] yytext/yyin/yyout/yy_state_type/yylineno etc. def's & init go here */
+/* Begin user sect3 */
 
 #define FLEX_DEBUG
 
@@ -763,7 +764,7 @@ char *yytext_ptr;
 #line 1 "lex.l"
 #line 2 "lex.l"
   #include "yacc.h"
-#line 767 "<stdout>"
+#line 768 "<stdout>"
 
 #define INITIAL 0
 
@@ -1008,7 +1009,7 @@ YY_DECL
 #line 5 "lex.l"
 
 
-#line 1012 "<stdout>"
+#line 1013 "<stdout>"
 
 	if ( !(yy_init) )
 		{
@@ -1530,10 +1531,10 @@ YY_RULE_SETUP
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
-#line 92 "lex.l"
+#line 93 "lex.l"
 ECHO;
 	YY_BREAK
-#line 1537 "<stdout>"
+#line 1538 "<stdout>"
 			case YY_STATE_EOF(INITIAL):
 				yyterminate();
 
@@ -2642,4 +2643,11 @@ void yyfree (void * ptr )
 
 /* %ok-for-header */
 
-#line 92 "lex.l"
+#line 93 "lex.l"
+
+
+
+void yyerror (char *s) {
+    fprintf (stderr, "%s\n", s);
+}
+
