@@ -10,24 +10,23 @@ Il est actuellement réalisé par ABHAMON Ronan, BIGARD Florian et REYNAUD Nicol
 Utilisation du projet
 -----------------------
 
-1. Se positionner à la racine du projet
-2. Utiliser la commande 
+1. Se positionner à la racine du projet.
 
-	./build make
-	
-pour construire l'executable
-3. Executer la commande : 
+2. Utiliser la commande suivante pour construire l'executable :    
 
-	./test_examples
-	
-pour vérifier la fiabilité des programmes de tests.
+        ./build make
+
+3. Executer la commande suivante pour vérifier la fiablité des programmes de tests : 
+
+        ./test_examples
+
 **true** correspond à un parsage parfait, **false** à une erreur. 
 Certains programmes sont de ce fait foncièrement faux.
 
 Note
 ----
-La commande :  
+La commande suivante donne les détails du parsage :  
 
 	./prog < <prog source>
 	
-donne les détails du parsage. (Le lex étant utilisé en mode debug par le biais de l'option -d). Elle constitue une alternative au programme "test_examples".
+(Le lex étant utilisé en mode debug par le biais de l'option -d). Elle constitue une alternative au programme "test_examples".
