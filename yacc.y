@@ -65,6 +65,10 @@
 %token ET 
 %token OU
 
+/* Break & Continue */
+%token CONTINUE
+%token BREAK
+
 %token START
 
 %%
