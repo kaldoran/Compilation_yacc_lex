@@ -111,7 +111,7 @@ start {
 		write("%d",was_it_true);
 	}
 
-	; 
+	; // ca sert a rien mais c'est cool
 } 
 
 
