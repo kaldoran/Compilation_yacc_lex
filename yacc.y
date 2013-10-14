@@ -314,8 +314,8 @@ un_arg: expression
 format: CSTE_CHAINE
       ;
  
-suite_ecriture: VIRGULE variable suite_ecriture
-              |
+suite_ecriture: VIRGULE expression suite_ecriture
+	      |
               ;
 
 /* -----------------------------------------------------*/

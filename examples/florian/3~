@@ -26,5 +26,5 @@ function pipi (arg:int, arg2:string[10]) return int
 # Mon deuxième commentaire
 -- C'est mon dernier commentaire --
 start{x=3;} /* Ceci est mon dernier commentaire
-pour dire "/* lol */" qu'on est obligé de mettre 
+pour dire  qu'on est obligé de mettre 
 x = 3; */

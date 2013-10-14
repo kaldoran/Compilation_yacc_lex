@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/bin/ruby
 
 # Dossier des exemples
 ex_files = "#{Dir.pwd}/examples"

@@ -1,0 +1,59 @@
+% VIDEO GAME %
+
+type coordonnee : 
+	struct 
+		x : float;
+		y : float;
+		z : int;
+	end struct;
+
+type map : array [0..100] of coordonnee;
+
+type munition :
+	struct 
+		balle : int;
+		grenade : int;
+	end struct;
+
+type player : 
+	struct 
+		nom : string[200];
+		score : int;
+		position : coordonnee;
+		nbMunition : munition;
+	end struct;
+
+
+function positionPlayerX (P : Player) return float 
+var posX : float;
+start { 
+	if ((posX = P.position.x) > 0) then {
+		return posX;
+	}
+	return -1;		
+};
+
+function positionPlayerX (P : Player) return float
+var posY : float;
+start {
+	if ((posY = P.position.y) > 0) then {
+		return posY;
+	}
+	return -1;	
+	
+};
+
+function nbMunition(P : Player) return int 
+start { return P.munition.balle; };
+
+proc affiche(P : Player ) 
+start {
+	write("Nb munition",nbMunition(P));
+	return;
+};
+
+
+start { ; } 
+
+
+
