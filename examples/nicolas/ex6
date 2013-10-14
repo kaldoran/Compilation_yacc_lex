@@ -107,12 +107,12 @@ start {
 		newplayer.name = "Cheateur";
 		write("Cheat detected !");
 		read (was_it_true);
-		was_it_true = was_it_true == false ? "Menteur" : "Meuteur quand même";
-		write("%d",was_it_true);
+		was_it_true = (was_it_true == false) ? "Menteur" : "Meuteur quand même";
+		write("%s",was_it_true);
 	}
 
 	; // ca sert a rien mais c'est cool
 } 
-
+-- FIN PROGRAMME --
 
 
