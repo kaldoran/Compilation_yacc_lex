@@ -12,7 +12,7 @@ if ( ! test -z $1 ); then
 	    gcc src/yacc.c src/lex.c -o prog -ly -lfl
 	    ;;
 	"clean")
-	    rm src/*.c src/*.h prog *~ exemples/*~ 2> /dev/null 
+	    rm src/*.c src/*.h prog *~ examples/*/*~ 2> /dev/null 
 	    ;;
 	*) echo "Usage: <make|clean>" ;;
     esac
