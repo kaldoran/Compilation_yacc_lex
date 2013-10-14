@@ -5,8 +5,6 @@
 %%
 
 \/\*([^\"\*\/]|\*|(\**\"[^\"]*\"))*\*+\/ ;
-#\/\*.*\*+\/ ;
-
 \#.* ;
 --.*-- ;
 \/\/.* ;
@@ -55,6 +53,8 @@ switch      {return(SWITCH);}
 case        {return(CASE);}
 default     {return(DEFAULT);}
 start       {return(START);}
+continue    {return(CONTINUE);}
+break       {return(BREAK);}
 
 int    {return(ENTIER);}
 float  {return(REEL);}
