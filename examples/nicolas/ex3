@@ -28,7 +28,7 @@ proc procemon()
      
 # /* lolol */
 proc procemon() 
-     var x : string[-15]; #un commentaire placé un peu n'importe ou
+     var x : string[15]; #un commentaire placé un peu n'importe ou
      start{
           x++;
           write("Incrementer c'est bien");
