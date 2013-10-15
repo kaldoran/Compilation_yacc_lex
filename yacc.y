@@ -200,10 +200,14 @@ instruction: POINT_VIRGULE
            | appel POINT_VIRGULE
            | VIDE
            | RETOURNE resultat_retourne POINT_VIRGULE
-           | ECRIRE PARENTHESE_OUVRANTE format suite_ecriture PARENTHESE_FERMANTE POINT_VIRGULE
-           | LIRE PARENTHESE_OUVRANTE liste_variables PARENTHESE_FERMANTE POINT_VIRGULE
+           | instr_pre
            ;
      
+instr_pre: RAND PARENTHESE_OUVRANTE PARENTHESE_FERMANTE POINT_VIRGULE 
+         | ECRIRE PARENTHESE_OUVRANTE format suite_ecriture PARENTHESE_FERMANTE POINT_VIRGULE
+         | LIRE PARENTHESE_OUVRANTE liste_variables PARENTHESE_FERMANTE POINT_VIRGULE
+	 ;
+
 /* -----------------------------------------------------*/
 /* Affectation                                          */
 /* -----------------------------------------------------*/
