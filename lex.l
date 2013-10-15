@@ -27,6 +27,7 @@
 (0|[1-9][0-9]*)?\.[0-9]+ {return(CSTE_REELLE);}
 true|false               {return(CSTE_BOOLEENNE);}
 
+rand  {return(RAND);}
 write {return(ECRIRE);}
 read  {return(LIRE);} 
 

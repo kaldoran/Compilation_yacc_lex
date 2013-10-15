@@ -1,3 +1,6 @@
 % MANQUE D'IDEE %
 
+type idee : array [ 0 .. 2 , 0 .. 100] of ideee; 
+# nbidee idee 
+#   0    aucune
 
