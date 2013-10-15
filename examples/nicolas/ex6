@@ -64,7 +64,7 @@ start {
 			write("Un diamant ! Il se mange ?");
 		}
 		else {
-			write("Vous trouvez %d petit(s) caillou(x)\n",rand);
+			write("Vous trouvez %d petit(s) caillou(x)\n",rand());
 		}
 	}
 };

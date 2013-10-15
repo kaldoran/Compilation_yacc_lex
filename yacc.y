@@ -176,7 +176,6 @@ type_simple: ENTIER
            | BOOLEEN
            | CARACTERE
            | CHAINE CROCHET_OUVRANT CSTE_ENTIERE CROCHET_FERMANT /* Chaîne constante */
-           | CHAINE /* Chaîne a taille variable */
            ;
 
 /* -----------------------------------------------------*/
@@ -200,12 +199,12 @@ instruction: POINT_VIRGULE
            | appel POINT_VIRGULE
            | VIDE
            | RETOURNE resultat_retourne POINT_VIRGULE
-           | instr_pre
+           | instr_pre POINT_VIRGULE
            ;
      
-instr_pre: RAND PARENTHESE_OUVRANTE PARENTHESE_FERMANTE POINT_VIRGULE 
-         | ECRIRE PARENTHESE_OUVRANTE format suite_ecriture PARENTHESE_FERMANTE POINT_VIRGULE
-         | LIRE PARENTHESE_OUVRANTE liste_variables PARENTHESE_FERMANTE POINT_VIRGULE
+instr_pre: RAND PARENTHESE_OUVRANTE PARENTHESE_FERMANTE 
+         | ECRIRE PARENTHESE_OUVRANTE format suite_ecriture PARENTHESE_FERMANTE 
+         | LIRE PARENTHESE_OUVRANTE liste_variables PARENTHESE_FERMANTE 
 	 ;
 
 /* -----------------------------------------------------*/
@@ -363,6 +362,7 @@ expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | CSTE_BOOLEENNE
            | CSTE_CHAINE 
            | appel
+           | instr_pre
            | variable
            | MOINS variable
            | MOINS CSTE_REELLE

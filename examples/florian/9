@@ -10,7 +10,7 @@ end struct;
 
 
 
-function appel(x:entier, y:entier, z:char, a:string[10]) return string
+function appel(x:entier, y:entier, z:char, a:string[10]) return string[36]
     var i:int;
     
     start{

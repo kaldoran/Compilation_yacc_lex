@@ -11,7 +11,7 @@ start {
 	return "jus de fruit";
 };
 
-function rand(min : int, max : int) return int 
+function rand10(min : int, max : int) return int 
 start {
      return (min * (rand() / RAND_MAX) - max)   ;
 };
@@ -23,15 +23,15 @@ var continu : bool;
 start {
      
      do {
-	  ensemblefruit[0] = (rand1 = rand(0,smoothie.nb_fraise));
-	  ensemblefruit[1] = (rand2 = rand(0,smoothie.nb_banane));
+	  ensemblefruit[0] = (rand1 = rand()  + smoothie.nb_fraise);
+	  ensemblefruit[1] = (rand2 = rand() + smoothie.nb_banane);
           mix(ensemblefruit);
      
           write("%d fraises mixée , %d banane mixée",rand1,rand2);
           write("Pour quitter trouver le bon nombre");
           read (continu);
     	} 
-     while ( continu = rand ( -5000,50000-50 ) );
+     while ( continu = rand () );
      
 };
 
