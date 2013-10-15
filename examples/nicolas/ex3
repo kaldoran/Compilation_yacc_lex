@@ -99,7 +99,7 @@ type encore_plus_cool : struct
      
 end struct;
 
-var __________________ : string[-99999999];
+var __________________ : string[99999999];
 
 
                                   -- DEBUT DU PROGRAMME --
