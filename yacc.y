@@ -350,7 +350,7 @@ expression2: expression2 MULTIPLICATION expression3
 	   | expression2 MODULO expression3
            | expression2 ET expression3
            | expression3
-           ;
+           ; 
 
 expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | CSTE_REELLE
