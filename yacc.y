@@ -6,7 +6,7 @@
 %token VIDE
 
 /* Fonctions prédefinies */
-%token ECRIRE LIRE
+%token RAND ECRIRE LIRE
 
 /* Ponctuation */
 %token CROCHET_OUVRANT CROCHET_FERMANT
