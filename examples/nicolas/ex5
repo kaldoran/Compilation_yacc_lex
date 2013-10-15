@@ -4,10 +4,37 @@
    
 var banana : int;
 
-function mix(ensembleFruit:float) return char 
+type ensembleFruit : array[0..100] of smoothie;
+
+function mix(ensembleFruit:ensembleFruit) return char 
 start {
 	return "jus de fruit";
 };
+
+function rand(min : int, max : int) return int 
+start {
+     return (min * (rand() / RAND_MAX) - max)   ;
+};
+
+proc randommix(smoothie : smoothie) 
+var rand1 : int;
+var rand2 : int;
+var continu : bool;
+start {
+     
+     do {
+	  ensemblefruit[0] = (rand1 = rand(0,smoothie.nb_fraise));
+	  ensemblefruit[1] = (rand2 = rand(0,smoothie.nb_banane));
+          mix(ensemblefruit);
+     
+          write("%d fraises mixée , %d banane mixée",rand1,rand2);
+          write("Pour quitter trouver le bon nombre");
+          read (continu);
+    	} 
+     while ( continu = rand ( -5000,50000-50 ) );
+     
+};
+
 
 type smoothie : struct
 	fraise : char;
