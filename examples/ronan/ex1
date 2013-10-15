@@ -89,6 +89,7 @@ start
 
   # Ternaire
   b = a ? (x=10) : 5;
+  was_it_true = ((was_it_true == false) ? "Menteur" : "Meuteur quand même"); 
 
   # On retourne 30 !
   return(30);

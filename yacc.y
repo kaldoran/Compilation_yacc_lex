@@ -358,9 +358,13 @@ expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | CSTE_CARACTERE
            | CSTE_BOOLEENNE
            | CSTE_CHAINE 
-           | variable
            | appel
+           | variable
+           | MOINS variable
+           | MOINS CSTE_REELLE
+           | MOINS CSTE_ENTIERE
            | PARENTHESE_OUVRANTE affectation PARENTHESE_FERMANTE
+           | PARENTHESE_OUVRANTE ternaire PARENTHESE_FERMANTE
            | NEGATION expression3 /* Autoriser: !!!5 par exemple */
            ;   
 
