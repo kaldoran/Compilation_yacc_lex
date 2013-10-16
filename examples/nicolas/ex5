@@ -29,9 +29,9 @@ start {
      
           write("%d fraises mixée , %d banane mixée",rand1,rand2);
           write("Pour quitter trouver le bon nombre");
-          read (continu);
+          read (continue);
     	} 
-     while ( continu = rand () );
+     while ( continue == rand () );
      
 };
 
