@@ -211,12 +211,18 @@ instr_pre: RAND PARENTHESE_OUVRANTE PARENTHESE_FERMANTE
 /* Affectation                                          */
 /* -----------------------------------------------------*/
   
-affectation: variable OPAFF expression   /* x = 5 + 3 * 5 + fun(5) ... */
-           | variable op_bin             /* x++;  x--; */
-           | op_bin variable             /* ++x;  --x; */
-           | variable OPAFF ternaire     /* x = 5 + 6 > 3 ? 10 : 26 */
-           | variable op_rac expression; /* x += 5; x /= 6 + 9 */
+affectation: affectation_base
+           | incr_bin
            ; 
+
+affectation_base: variable OPAFF expression   /* x = 5 + 3 * 5 + fun(5) ... */
+                | variable OPAFF ternaire     /* x = 5 + 6 > 3 ? 10 : 26 */
+                | variable op_rac expression  /* x += 5; x /= 6 + 9 */
+                ;
+ 
+incr_bin: variable op_bin
+        | op_bin variable
+        ;
 
 op_bin: PLUS_ET_PLUS
       | MOINS_ET_MOINS 
@@ -363,11 +369,12 @@ expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | CSTE_CHAINE 
            | appel
            | instr_pre
+           | incr_bin
            | variable
            | MOINS variable
            | MOINS CSTE_REELLE
            | MOINS CSTE_ENTIERE
-           | PARENTHESE_OUVRANTE affectation PARENTHESE_FERMANTE
+           | PARENTHESE_OUVRANTE affectation_base PARENTHESE_FERMANTE
            | PARENTHESE_OUVRANTE ternaire PARENTHESE_FERMANTE
            | NEGATION expression3 /* Autoriser: !!!5 par exemple */
            ;   
