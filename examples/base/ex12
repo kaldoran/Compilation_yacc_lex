@@ -1,17 +1,23 @@
 % MON PROGRAMME START %
 
-var choix : int;
+var choix : char;
+                                        -- DEBUT DE MON PROGRAMME INUTILE --
 start {
-	write("[1] - \n");
-	write("[2] - \n");
-	write("[3] - \n");
+     do {
+               
+          write("-------------------------------------BIENVENU DANS MON PROGRAMME INUTILE !\n-------------------------------------");
+	     write("[1] - CHOIX 1\n");
+	     write("[2] - CHOIX 2\n");
+	     write("[3] - CHOIX 3\n");
 
-	switch choix {
-		case 1 : ;
-		case 2 : ;
-		case 3 : ;
-		default : ;
-	}
-
-	;
+	     switch choix {
+		     case 1 : write("Voici le choix 1");
+		     case 2 : { read(choix); write("%d choix");}
+		     case 3 : write("%f",rand()); 
+		     default : write("Choix invalide");
+	     }
+     } while ( choix != 'q');
+     
+	; /* instruction vide */
+	write("Au revoir ! ");
 }
