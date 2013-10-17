@@ -1,9 +1,0 @@
- %PROGRAM%
- 
- 
- start{
-    if(x > i)then {
-    }
- }
-
-# Ne fonctionne pas car il doit obligatoirement y avoir une instruction dans le if

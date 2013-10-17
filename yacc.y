@@ -368,8 +368,8 @@ expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | CSTE_BOOLEENNE
            | CSTE_CHAINE 
            | appel
-           | instr_pre
-           | incr_bin
+           | instr_pre /* READ/WRITE/RAND */
+           | incr_bin  /* ++x, x++ ... */ 
            | variable
            | MOINS variable
            | MOINS CSTE_REELLE
