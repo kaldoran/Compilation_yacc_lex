@@ -1,0 +1,12 @@
+%PROGRAM% 
+
+type type_normal : struct
+  test_int : int;
+  test_char : char;
+  test_tableau : array[x+1..y,1..9] of int;
+end struct;
+
+# Ne fonctionne pas car il faut d'abord déclarer l'array comme type et utiliser son IDF associé
+
+
+

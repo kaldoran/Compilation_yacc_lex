@@ -1,0 +1,17 @@
+%PROGRAM%
+
+function appel(x:entier, y:entier, z:char, a:string[10]) return string
+  var i:int;
+    
+  start {
+    for (i=2; !continuer; i=2+(i++)) do {
+      write ("coucou %d %s", x, y);
+      x= 2.;
+    }
+  };
+
+# Ne fonctionne pas car il n'y a pas d'instructions (start ...)
+
+
+
+

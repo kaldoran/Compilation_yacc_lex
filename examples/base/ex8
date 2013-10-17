@@ -1,0 +1,23 @@
+%PROGRAM%
+
+start { 
+  while (continuer) do {
+    coucoucoucou = 7;
+        
+    for i=2; continuer; i++ do {
+      write ("coucou");
+      x= 2.0;
+    }
+
+    do {
+      appel();
+    } while(i > 6);
+    
+  }
+}
+
+
+
+
+
+

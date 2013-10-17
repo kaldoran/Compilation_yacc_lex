@@ -1,0 +1,20 @@
+%PROGRAM%
+
+# La fonction ne fonctionne pas car il doit y avoir un entier dans string
+# Il faut allouer un certain nombre de cases du tableau
+function appel(x:entier, y:entier, z:char, a:string[]) return string
+  var i:int;
+    
+  start {
+   for i=2; continuer; i=2+(i++) do {
+     write ("coucou %d %s", x, y);
+     x= 2.;
+   }
+};
+
+
+
+
+
+
+

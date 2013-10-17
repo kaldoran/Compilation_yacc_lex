@@ -1,0 +1,86 @@
+% MANQUE DIDEE %
+
+type ideee :
+	struct 
+		uneidee : char;
+	end struct;
+
+type idee : array [ 0 .. 2 , 0 .. 100] of ideee; 
+# nbidee idee 
+#   0    aucune
+var idtodo : int;
+type todo : array [ 0 .. 100 ] of ideee;
+
+function add_todo(id : int,uneidee : idee) return int 
+start {
+	if( estdefinie(uneidee) and id > 0) then{
+		
+		add_todo[id].uneidee = uneidee;
+		id++;
+		return id;
+	}
+	return 0;
+};
+
+function genere_idee(id : idee) return string[50]
+var i,j : float;
+var cpt : int;
+var tmp : string[50];
+start {
+	for ( cpt = 0; cpt < 100 ; cpt++) do {
+		tmp = "";
+		switch (i = rand() % 3) {
+			case 1. : { tmp .= "Manger "; 
+				    switch (j = i * (rand () + i)) {
+					case (5. < j ) : tmp .= "une pomme";
+					case (7. < j ) : tmp .= "une orange";
+					case !(7. < j) : tmp .= "un steak";
+					default : tmp .= "rien";
+				  }
+			}
+			case 2. : { tmp .= "Dormir ";
+				    switch (j = i * rand () + i * i) {
+					case ( j != 0 ) : tmp .= j+"heure";
+					default : tmp .= "ça sert a rien";
+	   			    }
+			}
+			case 3. : { tmp .= "Boire ";
+				    switch (j = i * rand ()) {
+					case ( 2. < j) : tmp .= "une biere";
+					case ( 3. > j) : tmp .= "de l'eau";
+					case ( 4. > j and j < 100.) : tmp .= "n'importe quoi , j'ai soif ";
+					default : tmp .= "rien du tout ... ";
+				    }
+			}
+			default : tmp .= "Ne rien faire";
+		}
+		id[1][cpt].uneidee = "ok";
+		id[1][cpt].uneidee = tmp;
+		write("Tu as plein d'idée maintenant");
+	}
+};
+
+proc affichage (id : idee) 
+var i : int;
+start {
+
+	for ( i = 0 ; i < 100 ; i ++) do {
+		write("[%d] - %d\n",id[0][i].uneidee,id[1][i].uneidee);	
+	}
+};
+
+var id : idee;
+var todo : int;
+
+start { 
+	do {
+		idtodo = 0;
+		read (todo);
+		if( todo == 1) then {
+			read (monidee);
+			idtodo = add_todo(idtodo, monidee);
+		}
+		genere_idee(id);
+		affichage(id);
+	} while( todo != 0);
+}

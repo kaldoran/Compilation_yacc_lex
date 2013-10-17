@@ -1,0 +1,52 @@
+% PROGRAMME EXOTIQUE %
+		--- La programmation exotique ---
+			--	--
+   
+var banana : int;
+
+type ensembleFruit : array[0..100] of smoothie;
+
+function mix(ensembleFruit:ensembleFruit) return char 
+start {
+	return "jus de fruit";
+};
+
+function rand10(min : int, max : int) return int 
+start {
+     return (min * (rand() / RAND_MAX) - max)   ;
+};
+
+proc randommix(smoothie : smoothie) 
+var rand1 : int;
+var rand2 : int;
+var continu : bool;
+start {
+     
+     do {
+	  ensemblefruit[0] = (rand1 = rand()  + smoothie.nb_fraise);
+	  ensemblefruit[1] = (rand2 = rand() + smoothie.nb_banane);
+          mix(ensemblefruit);
+     
+          write("%d fraises mixée , %d banane mixée",rand1,rand2);
+          write("Pour quitter trouver le bon nombre");
+          read (continu);
+    	} 
+     while ( continu == rand () );
+     
+};
+
+
+type smoothie : struct
+	fraise : char;
+	nb_fraise : int;
+	banane : char;
+	nb_banane : int;
+end struct;
+
+
+start {
+	banane = "banane" + "orange" > "noix de coco";
+	return "salade de fruit";
+	write("on peut ajouter une %s ",mangue);
+}
+

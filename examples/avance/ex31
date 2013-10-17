@@ -1,0 +1,97 @@
+#!/usr/bin/cpyrr
+# -*- coding: utf-8 -*-
+
+% TESTS BASIQUES %
+
+# Paramètres d'entrée
+var x, y : int;
+var t : float;
+
+start
+
+# Execution
+{
+  write("Bonjour");
+  x = 10;
+  y = x + 6;
+
+  # Test du if/else if/else
+  if x == 6 then {
+    x = 3;
+  }
+  else if y == 2 then {
+    write("Oh non !");
+  }
+  else {
+    x = 0;
+    y = 0;
+    write("AHAH");
+  }
+
+  # Tests d'écriture
+  write("X: %d, Y: %d", x, y);
+  write("Au revoir !");
+
+  # Tests booleens
+  if 5 + 1 == 3 then {
+    write("ok");
+  }
+
+  if 4 < 3 and 4 + 6 * 8  then {
+    write("ooo");
+  }
+
+  if (4 + 3 * (8 + 5) - (4 + 6)) then {
+    x = -9;
+  }
+
+  # Comparaison ">" possible
+  # Voir en C pour les cas possible de ">" "=>" ...
+  if 4 + 9 / 8 * 4 > 4 * 3 + 9 + 4 + 8  > 4 and 9 + 6 + 4 > 5 then {
+    y = 9 * 5 + 6;
+  }
+
+  # Incrémentation, décrémentation
+  x++;
+  --x;
+
+  # Instruction vide
+  ;
+
+  # SWITCH
+  switch x
+  {
+    case 5: write("Bonjour");
+    case 10:
+    {
+       x = 58;
+       y = 12;
+    }
+    case 20: write("5");
+    default: write("50");
+  }
+
+  # Affectation puis condition
+  if (y = 5) then {
+    write("YES");
+  }
+
+  if 5 then {
+    write("ok");
+  }
+
+  # Condition : Affectation + appel fonction + calcul 
+  if 5 + 6 * (x += 5) / 3 + a + fun(5) then {
+    x = 3;
+  }
+
+  # Test d'affichage de champs de structures
+  write("%d", a.b[5].d[45][2]);
+
+  # Ternaire
+  b = a ? (x=10) : 5;
+  was_it_true = ((was_it_true == false) ? "Menteur" : "Meuteur quand même"); 
+
+  # On retourne 30 !
+  return(30);
+}

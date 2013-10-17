@@ -1,0 +1,13 @@
+#!/usr/bin/cpyrr
+# -*- coding: utf-8 -*-
+
+% TESTS_AFFECTATIONS_DECLARATIONS %
+
+var x, y : int;
+var buffer : string[]; # On est obligé de dire combien de "cases" on réserve
+var _b : bool;
+
+start
+{
+  return 0;
+}

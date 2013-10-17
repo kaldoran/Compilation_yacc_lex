@@ -1,0 +1,33 @@
+% MON PROGRAMME 4 %
+
+-- Seulement des instructions sans déclaration --
+
+start {
+	; #on commence par un truc inutile
+
+	x = 7 * ( 7 + 7 ) * ( 5 + 5 <= 5 and "chaine" or 5 * 5);
+
+	switch sand() # et un sand switch
+	{
+		case ual : ;
+		case ual : 
+			-- c'est for --
+			for x++;x;x++ do {
+				; 
+			}
+		# switch sans default
+	}
+	
+	switch sand() 
+	{
+		case ( a and c) or c: 
+			if ((c = funct()) == d) then {
+				write("Dans C");
+			}
+			else { 
+				write("Or C comme le quai");
+			}
+		default : ; #defaut vide
+	}
+}
+

@@ -1,0 +1,15 @@
+#!/usr/bin/cpyrr
+# -*- coding: utf-8 -*-
+
+% TESTS_STRUCTURES_ET_TABLEAUX %
+
+proc remplir(ensemble : v)
+  var i : int;
+  start
+  {
+    # Ne fonctionne pas car il doit forcément y avoir une instruction
+  };
+
+# Programme
+start
+{;}

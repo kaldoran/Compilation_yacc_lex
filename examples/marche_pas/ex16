@@ -1,0 +1,17 @@
+#!/usr/bin/cpyrr
+# -*- coding: utf-8 -*-
+
+% TESTS_DE_CONDITIONS_ET_BOUCLES %
+
+start
+{
+  if a then {
+    write("l");
+  }
+  else if k then {
+    if r then {
+      # Ne fonctionne pas car il faut d'abord passer une chaine, puis les variables
+      write(k);
+    }
+  }
+}

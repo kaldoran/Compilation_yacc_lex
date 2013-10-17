@@ -1,0 +1,17 @@
+#!/usr/bin/cpyrr
+# -*- coding: utf-8 -*-
+
+% SALADE_DE_FRUITS %
+
+var i : string[40];
+
+# Ne fonctionne pas car (au-dela du fait qu'il faut créer le type SaladeDeFruits), 
+# on ne peut pas créer de tableau d'un type autre qu'un string
+var i : SaladeDeFruits[50];
+
+# Programme
+start
+{
+  return 0;
+}
+

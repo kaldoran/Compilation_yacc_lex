@@ -1,0 +1,39 @@
+% NOPE %
+
+type tab_ultra : array[0..100,0..100,0..100] of int;
+
+function function_immonde_inutile() return int 
+start {
+	return;
+};
+
+start {
+	do {
+		switch tab_ultra[this() - 1 + (x--) * tab[this() % 5 + (x %= this() - 5) - x ]] {
+			case tab["Jean Bonnot"] : ;
+			default : write("En fait non");
+		}
+		
+	} while ( ! x != "Avion" or !false or !true);
+
+	for (i++;!( a and b or c);i--) do{	
+		i = ! i;
+	}
+
+	y = y + 1 ? function_immonde("heu")  : ! (x == 8);
+
+	if (! tab_ultra[function_immonde(y) + function_immonde(a / b + 5 % 5 - b * a , function_immonde("moi meme") , "kaldoran")]) then {
+		write("C'est parfait tout ca");
+	}
+	else if (! tab_ultra[tab[tab[function_immonde(a,b,c,d,e,f,g,h)]]]) then{
+		write("C'est parfait tout ca");
+	}
+	else {
+		read(x);
+		function_immonde();
+	}
+	
+}
+
+
+

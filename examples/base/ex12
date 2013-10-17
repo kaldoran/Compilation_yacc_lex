@@ -1,0 +1,17 @@
+% MON PROGRAMME START %
+
+var choix : int;
+start {
+	write("[1] - \n");
+	write("[2] - \n");
+	write("[3] - \n");
+
+	switch choix {
+		case 1 : ;
+		case 2 : ;
+		case 3 : ;
+		default : ;
+	}
+
+	;
+}

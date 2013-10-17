@@ -1,0 +1,35 @@
+%PROGRAM% 
+
+type type_normal : struct
+  test_int : int;
+  test_char : char;
+end struct;
+
+type type_tableau : array[1 .. 3] of int;
+
+var variable_carac : char;
+var tab : type_tableau;
+var var_struct : type_normal;
+
+function prem_fun (arg:type_tableau, arg_2:type_normal) return int
+var i : int;
+var variable_carac : char;
+var tab : type_tableau;
+var var_struct : type_normal;
+
+start{
+  while (1 > 2) do { 
+    write ("coucou les amis"); 
+  }
+};
+
+var coucou:char;
+
+start {
+  coucou = type_normal.test_char;
+
+  read(annee, chaine[50]);
+  write("J'ai %d ans et toutes mes %s !\n", annee, chaine[50]);
+}
+
+
