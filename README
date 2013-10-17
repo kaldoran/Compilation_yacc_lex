@@ -1,9 +1,9 @@
 # ------------------------------------------------ #
-# Auteurs: #
-# #
-# ABHAMON Ronan #
-# BIGARD Florian #
-# REYNAUD Nicolas #
+# Auteurs:                                         #
+#                                                  #
+# ABHAMON Ronan                                    #
+# BIGARD Florian                                   #
+# REYNAUD Nicolas                                  #
 # ------------------------------------------------ #
 
 Utilisation du projet :
@@ -14,6 +14,11 @@ III - Executer la commande "./test_examples" pour vérifier la fiabilité des pr
       "true" correspond à un parsage parfait, "false" à une erreur.
       Certains programmes sont de ce fait foncièrement faux.
 
-Note : La commande "./prog < <prog source>" donne les détails du parsage.
-       (Le lex étant utilisé en mode debug par le biais de l'option -d)
-       Elle constitue une alternative au programme "test_examples".
+Notes : 
+- La commande "./prog < <prog source>" donne les détails du parsage.
+  (Le lex étant utilisé en mode debug par le biais de l'option -d)
+  Elle constitue une alternative au programme "test_examples".
+
+- Le répertoire examples contient des exemples de bases (très simples),
+  des exemples qui ne fonctionnent pas volontairement et enfin des
+  programmes avancés qui effectuent des tests exhaustifs du langage.
