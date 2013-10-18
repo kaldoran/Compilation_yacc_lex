@@ -9,7 +9,7 @@ if ( ! test -z $1 ); then
          mkdir src 2> /dev/null
 	    yacc -d yacc.y -o src/yacc.c
 	    lex -t -d lex.l > src/lex.c
-	    gcc src/yacc.c src/lex.c -o prog -ly -lfl
+	    gcc -Wall -pedantic src/yacc.c src/lex.c -o prog -ly -lfl
 	    ;;
 	"clean")
 	    rm src/*.c src/*.h prog *~ examples/*/*~ 2> /dev/null 

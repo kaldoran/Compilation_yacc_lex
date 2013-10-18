@@ -2,6 +2,12 @@
 /* TOKENS                                               */
 /* -----------------------------------------------------*/
 
+%{
+  /* Pour le flag de compilation -Wall */
+  extern int yylex(void);
+  extern void yyerror(char *txt);
+%}
+
 /* Vide */
 %token VIDE
 
@@ -359,6 +365,7 @@ expression2: expression2 MULTIPLICATION expression3
 	   | expression2 MODULO expression3
            | expression2 ET expression3
            | expression3
+           | MOINS expression3
            ; 
 
 expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
@@ -371,9 +378,6 @@ expression3: PARENTHESE_OUVRANTE expression PARENTHESE_FERMANTE
            | instr_pre /* READ/WRITE/RAND */
            | incr_bin  /* ++x, x++ ... */ 
            | variable
-           | MOINS variable
-           | MOINS CSTE_REELLE
-           | MOINS CSTE_ENTIERE
            | PARENTHESE_OUVRANTE affectation_base PARENTHESE_FERMANTE
            | PARENTHESE_OUVRANTE ternaire PARENTHESE_FERMANTE
            | NEGATION expression3 /* Autoriser: !!!5 par exemple */

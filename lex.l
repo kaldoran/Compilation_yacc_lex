@@ -2,6 +2,9 @@
   #include "yacc.h"
 %}
 
+%option nounput
+%option noinput
+
 %%
 
 \/\*([^\"\*\/]|\*|(\**\"[^\"]*\"))*\*+\/ ;
@@ -25,7 +28,7 @@
 '([^']|\\t|\\n|\\r|\\')' {return(CSTE_CARACTERE);}
 (0|[1-9][0-9]*)          {return(CSTE_ENTIERE);}
 (0|[1-9][0-9]*)?\.[0-9]+ {return(CSTE_REELLE);}
-true|false               {return(CSTE_BOOLEENNE);}
+"true"|"false"           {return(CSTE_BOOLEENNE);}
 
 rand  {return(RAND);}
 write {return(ECRIRE);}
@@ -69,15 +72,15 @@ string {return(CHAINE);}
 "/=" {return(DIV_EGAL);}
 "%=" {return(MODULO_EGAL);}
 
-"++" {return(PLUS_ET_PLUS);}
-"--" {return(MOINS_ET_MOINS);}
-"+"  {return(PLUS);}
-"-"  {return(MOINS);}
-"*"  {return(MULTIPLICATION);}
-"/"  {return(DIVISION);}
-"%"  {return(MODULO);}
-"!"  {return(NEGATION);}
-"?"  {return(INTERROGATION);}
+"++"      {return(PLUS_ET_PLUS);}
+"--"      {return(MOINS_ET_MOINS);}
+"+"       {return(PLUS);}
+"-"       {return(MOINS);}
+"*"       {return(MULTIPLICATION);}
+"/"       {return(DIVISION);}
+"%"       {return(MODULO);}
+"!"|"not" {return(NEGATION);}
+"?"       {return(INTERROGATION);}
 
 "<"   {return(INFERIEUR);}
 "<="  {return(INFERIEUR_OU_EGAL);}
@@ -94,7 +97,3 @@ or  {return(OU);}
 " "|\n|\t ;
 
 %%
-
-void yyerror (char *s) {
-    fprintf (stderr, "%s\n", s);
-}
