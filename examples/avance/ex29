@@ -54,9 +54,10 @@ start {
 			}
 			default : tmp .= "Ne rien faire";
 		}
-		id[1][cpt].uneidee = "ok";
+		id[0][cpt].uneidee = "ok";
 		id[1][cpt].uneidee = tmp;
 		write("Tu as plein d'idée maintenant");
+	     id[f(3*florian-ronan,"nicolas")][id.idee[5].uneidee[g(a)].chosequiexistepas[3][4][5.1]] = 1;
 	}
 };
 
