@@ -1,0 +1,115 @@
+% PROGRAMME GESTION CONTACT %
+
+type date : 
+	struct
+		jour : int;
+		mois : int;
+		annee : int;
+	end struct;
+
+type adresse : 
+	struct 
+		numero : int;
+		estrue : bool;
+		estchemin : bool;
+		estboulevard : bool;
+		estautre : bool;
+		adresse : string[500];
+		codePostal : int;
+	end struct;
+
+type contact : 
+	struct
+		nom : string[50];
+		prenom : string[30];
+		date_naissance : date;
+		marier : bool;
+		dateajout : date;
+		email : string[100];
+		adresse_contact : adresse;
+	end struct;
+
+type carnet : array [0..100,0..100] of contact;
+
+var moncarnet : carnet;
+var datetime : date;
+
+proc init_adresse (adr : adresse)
+start {
+	adr.numero = 0;
+	adr.estrue = 0;
+	adr.estchemin = 0;
+	adr.boulevard = 0;
+	adr.estautre = 1;
+	adr.adresse = "";
+	adr.codePostal = 0;
+};
+
+proc init(moncarnet : carnet)
+var i : int;
+start {
+	for ( i=0 ; i == 100 ; i++) do {
+		moncarnet.carnet[i].nom = "";
+		moncarnet.carnet[i].prenom = "";
+		init_date(moncarnet.carnet[i].date_naissance);
+		moncarnet.carnet[i].marier = 0;
+		init_date(moncarnet.carnet[i].dateajout);
+	 	moncarnet.carnet[i].email = "";
+		init_adresse(moncarnet.carnet[i].adresse_contact);
+	}
+};
+
+proc init_date(datetime : date) 
+start {
+	datetime.jour = 0;
+	datetime.mois = 0;
+	datetime.annee = 0;
+};
+
+function existe(prenom : string[30],nom : string[50],moncarnet : carnet) return bool
+var i : int;
+var existe : bool;
+start {
+	existe = false;
+	while ( i <= 100) do {
+		if ( moncarnet.prenom == prenom and moncarnet.nom == nom ) then {
+			existe = !existe;
+			return existe;
+		}
+		i++;
+	}
+	return existe;
+};
+
+function addcarnet(moncarnet : carnet,prenom : string[30],nom : string[50] , date_naissance : date) return bool
+var i : int;
+start {
+	while( i <= 100) do {
+		/* la fonction vide existe pas mais on suppose qu'elle existe */
+		if(prenom == "" or nom == "" or zero(moncarnet.date) ) then {
+			write("Erreur !");
+			return 0;
+		}
+		if ( moncarnet.prenom == "" or moncarnet.nom == "") then {
+			moncarnet.prenom = prenom;
+			moncarnet.nom = nom;
+
+			return 1;
+		}
+
+	}
+	return 0;
+};
+
+start { 
+	init(moncarnet); 
+	init(datetime);
+	addcarnet(moncarnet , "Jean", "Bonnot" , datetime);
+	write("%d",existe("Jean","Bonnot",moncarnet));
+	write("%d",existe("Janne","Bonnot",moncarnet));
+	write("%d",existe(moncarnet , "rien" , 0)); 
+
+	write("Au revoir !");
+	
+}
+
