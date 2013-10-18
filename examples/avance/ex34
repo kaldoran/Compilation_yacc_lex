@@ -55,6 +55,8 @@ start {
 		moncarnet.carnet[i].marier = 0;
 		init_date(moncarnet.carnet[i].dateajout);
 	 	moncarnet.carnet[i].email = "";
+		moncarnet.carnet[0][i] = "";
+		moncarnet.carnet[1][i] = "";
 		init_adresse(moncarnet.carnet[i].adresse_contact);
 	}
 };
@@ -72,7 +74,7 @@ var existe : bool;
 start {
 	existe = false;
 	while ( i <= 100) do {
-		if ( moncarnet.prenom == prenom and moncarnet.nom == nom ) then {
+		if ( moncarnet.prenom == prenom	and moncarnet.carnet[i].dateajout  and moncarnet.nom == nom ) then {
 			existe = !existe;
 			return existe;
 		}
@@ -91,15 +93,32 @@ start {
 			return 0;
 		}
 		if ( moncarnet.prenom == "" or moncarnet.nom == "") then {
-			moncarnet.prenom = prenom;
-			moncarnet.nom = nom;
-
-			return 1;
+			moncarnet[i].prenom = prenom;
+			moncarnet[i].nom = nom;
+			
+			return i;
 		}
 
 	}
 	return 0;
 };
+
+proc mariage(moncarnet : carnet, homme : contact , femme : contact ) 
+var i : int;
+
+start {
+	fonctioninutilequifait(homme[0].date_naissance.jours.casequiexistepas[0][5]);
+	if ( i = existe ( homme.prenom , homme.nom , moncarnet ) != 0 ) then {
+		moncarnet[1][i] = femme;
+	}
+	else {
+		i = addcarnet(moncarnet, homme.prenom,homme.nom,homme.date_naissance); // ajout pour avoir un emplacement vide
+		moncarnet[0][i] = homme; # homme associé pour recuperer entierement les info
+		moncarnet[1][i] = femme; // mariage en cours
+	}
+
+};
+
 
 start { 
 	init(moncarnet); 
