@@ -106,7 +106,7 @@ start {
 	init(datetime);
 	addcarnet(moncarnet , "Jean", "Bonnot" , datetime);
 	write("%d",existe("Jean","Bonnot",moncarnet));
-	write("%d",existe("Janne","Bonnot",moncarnet));
+	write("%d",!!!!!existe("Janne","Bonnot",moncarnet));
 	write("%d",existe(moncarnet , "rien" , 0)); 
 
 	write("Au revoir !");
