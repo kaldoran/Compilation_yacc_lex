@@ -40,7 +40,7 @@ start {
 			}
 			case 2. : { tmp .= "Dormir ";
 				    switch (j = i * rand () + i * i) {
-					case ( j != 0 ) : tmp .= j+"heure";
+					case ( j != 0 ) : tmp .= j+" heure";
 					default : tmp .= "ça sert a rien";
 	   			    }
 			}
